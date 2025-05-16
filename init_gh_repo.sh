@@ -28,7 +28,7 @@ set +e
 git init -b main
 echo "This is readme" | tee -a README.md
 # TODO: run `create` only when remote is absent
-gh repo create $REPO_NAME --public --source=. --remote=origin
+gh repo create $REPO_NAME --public --source=. --remote=$REPO_NAME
 #TODO: push local files
 set_git_identity
 git add --all .
