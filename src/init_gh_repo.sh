@@ -33,6 +33,6 @@ gh repo create $REPO_NAME --public --source=. --remote=$REPO_NAME
 set_git_identity
 git add --all .
 git commit -m "[gh_scripts-0] Initial commit."
-git push -u $REPO_NAME main
+git push --force
 set -e
 echo "Local repo created at: $REPO_DIR_CREATED"
